@@ -1,0 +1,70 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 5vh auto 0 auto;
+  gap: 8px;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1em solid #56b2e7;
+  background-color: #3765a1;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 13px 2px gray;
+  padding: 15px;
+  border-radius: 1em;
+}
+form label {
+  font-size: 0.6em;
+  color: whitesmoke;
+  margin-top: 1em;
+}
+form input {
+  border: 4px solid #3689b9;
+  border-radius: 8px;
+  background-color: #3765a1;
+  color: whitesmoke;
+}
+form input:focus {
+  outline: 0;
+  background-color: #2b4d79;
+}
+form input:valid:not(:placeholder-shown) {
+  border-color: greenyellow;
+}
+form input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: orangered;
+}
+form input::placeholder {
+  color: rgba(245, 245, 245, 0.507);
+  font-size: 0.8em;
+  padding: 5px;
+}
+form select {
+  border: 4px solid #3689b9;
+  border-radius: 8px;
+  background-color: #3765a1;
+  color: rgba(245, 245, 245, 0.822);
+  font-size: 0.7em;
+}
+form .error {
+  display: none;
+  background-color: rgba(248, 25, 25, 0.76);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: -8px;
+  color: whitesmoke;
+  font-size: 0.8em;
+  opacity: 0;
+  animation: myframes 300ms ease-in 1 normal forwards;
+}
+
+@keyframes myframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
